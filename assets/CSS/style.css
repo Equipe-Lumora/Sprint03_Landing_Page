@@ -40,10 +40,11 @@ html {
     border-bottom: 3px solid transparent;
     display: inline;
 
-    &:hover,
-    &:focus {
+    &:hover {
         border-color: var(--primary);
+        padding-bottom: 15px;
         outline: none;
+        color: #eeede3;
     }
 }
 
