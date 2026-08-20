@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&family=Anton&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 :root {
     /* cores */
     --primary: #ffc913;
@@ -11,6 +11,9 @@
     --menu: rgba(11, 12, 16, 0.31);
     --brilho: rgba(240, 165, 0, 0.35);
     --sombra: rgba(255, 255, 255, 0.15);
+    --titulo-cinza: #8a8a8a;
+    --card: #1a1a1a;
+    --texto: #cfcfcf;
 }
 
 * {
@@ -39,7 +42,7 @@ header {
     display: flex;
     justify-content: center;
     padding: 17px 15px;
-    background-color: var(--menu-bg);
+    background-color: var(--menu);
     backdrop-filter: blur(15px);
 }
 
@@ -172,7 +175,7 @@ header {
 
 .sonhos-titulo {
     font-family: 'Archivo Black', sans-serif;
-    color: #8a8a8a;
+    color: var(--titulo-cinza);
     text-transform: uppercase;
     font-size: clamp(32px, 5vw, 56px);
     line-height: 1.15;
@@ -188,7 +191,7 @@ header {
 }
 
 .sonhos-pergunta span {
-    color: #eeede3;
+    color: var(--light);
     font-weight: 400;
 }
 
@@ -201,7 +204,7 @@ header {
     margin: 0 auto;
 }
 .sonho-card {
-    background-color: #1a1a1a;
+    background-color: var(--card);
     border-radius: 20px;
     padding: 36px 32px;
     min-height: 180px;
@@ -222,13 +225,124 @@ header {
 
 .sonho-numero {
     font-weight: 700;
-    color: #ffffff;
+    color: var(--white);
     font-size: 20px;
 }
 
 .sonho-card p {
-    color: #cfcfcf;
+    color: var(--texto);
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
     line-height: 1.6;
+}
+
+.resposta {
+    padding: 6px 40px;
+}
+
+.resposta-title {
+    font-family: 'Archivo Black', sans-serif;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: clamp(40px, 8vw, 80px);
+    line-height: 1.1;
+    -webkit-text-stroke: 1.5px var(--white);
+    margin-left: 800px;
+   
+}
+
+.resposta-title span {
+    display: block;
+    text-align: right;
+}
+
+.ideias {
+    background-color: var(--black);
+    padding: 120px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.ideias-titulo-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.ideias-titulo-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: -2%;
+    width: 80%;
+    height: 50%;
+    background-color: #2a2416;
+    border-radius: 45px;
+    z-index: 0;
+}
+
+.ideias-titulo {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: clamp(130px, 11vw, 1000px);
+    line-height: 1.05;
+    background: linear-gradient(13deg, var(--primary), var(--white) 100%);
+    background-clip: text;
+    color: transparent;
+    z-index: 1;
+    margin-left: 30px;
+    top: 30%;
+}
+
+.ideias-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.ideia-card {
+    background-color: #16150f;
+    border: 1px solid transparent;
+    border-radius: 35px;
+    padding: 35px 15px;
+    position: relative;
+    transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.ideia-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary);
+    background-color: #1c1a10;
+}
+
+.ideia-card--destaque {
+    border-color: var(--primary);
+    background-color: #ffffff13;
+    backdrop-filter: blur(15px);
+
+}
+
+.ideia-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--white);
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.ideia-card p {
+    font-family: 'Work Sans', sans-serif;
+    color: #b8b6ad;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.ideia-tag {
+    display: block;
+    text-align: right;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #8a887e;
 }
