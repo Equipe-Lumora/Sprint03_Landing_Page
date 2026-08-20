@@ -64,7 +64,7 @@ header {
 }
 
 .hero {
-    background-color: var(--hero);
+    background-color: var(--black);
     min-height: 100vh;
     padding: 24px 40px;
     position: relative;
@@ -141,4 +141,94 @@ header {
     text-transform: uppercase;
     font-weight: 700;
     margin-top: 25px;
+}
+
+.questao {
+    padding: 6px 40px;
+}
+
+.questao-title {
+    font-family: 'Archivo Black', sans-serif;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: clamp(40px, 8vw, 80px);
+    line-height: 1.1;
+    -webkit-text-stroke: 1.5px var(--white);
+}
+
+.questao-title span {
+    display: block;
+    margin-left: 120px;
+}
+
+.sonhos {
+    padding: 100px 40px;
+}
+
+.sonhos-header {
+    max-width: 900px;
+    margin-bottom: 50px;
+}
+
+.sonhos-titulo {
+    font-family: 'Archivo Black', sans-serif;
+    color: #8a8a8a;
+    text-transform: uppercase;
+    font-size: clamp(32px, 5vw, 56px);
+    line-height: 1.15;
+    margin-left: 60px;
+}
+
+.sonhos-pergunta {
+    margin-top: 20px;
+    margin-left: 60px;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: clamp(14px, 2vw, 18px);
+}
+
+.sonhos-pergunta span {
+    color: #eeede3;
+    font-weight: 400;
+}
+
+.sonhos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 24px;
+    column-gap: 100px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.sonho-card {
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    padding: 36px 32px;
+    min-height: 180px;
+}
+
+.sonho-topo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.sonho-icone {
+    width: 45px;
+    height: 45px;
+    color: var(--primary);
+}
+
+.sonho-numero {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.sonho-card p {
+    color: #cfcfcf;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
 }
