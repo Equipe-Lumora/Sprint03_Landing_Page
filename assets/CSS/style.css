@@ -14,6 +14,8 @@
     --titulo-cinza: #8a8a8a;
     --card: #1a1a1a;
     --texto: #cfcfcf;
+    --cinza: #8a887e;
+    --cinza-claro: #b8b6ad;
 }
 
 * {
@@ -210,6 +212,13 @@ header {
     min-height: 180px;
 }
 
+.sonhos-grid :hover{
+    transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+    transform: translateY(-6px);
+    border-color: var(--primary);
+    background-color: #1c1a10;
+
+}
 .sonho-topo {
     display: flex;
     align-items: center;
@@ -319,7 +328,7 @@ header {
 
 .ideia-card--destaque {
     border-color: var(--primary);
-    background-color: #ffffff13;
+    background-color: var(--menu);
     backdrop-filter: blur(15px);
 
 }
@@ -334,7 +343,7 @@ header {
 
 .ideia-card p {
     font-family: 'Work Sans', sans-serif;
-    color: #b8b6ad;
+    color: var(--cinza-claro);
     font-size: 15px;
     line-height: 1.5;
 }
@@ -344,5 +353,103 @@ header {
     text-align: right;
     margin-top: 12px;
     font-size: 14px;
-    color: #8a887e;
+    color: var(--cinza);
+}
+
+.inovacao {
+  padding: 6px 40px;
+}
+
+.inovacao-title {
+    font-family: 'Archivo Black', sans-serif;
+    color: var(--white);
+    font-size: clamp(40px, 8vw, 80px);
+    line-height: 1.1;
+    -webkit-text-stroke: 1.5px var(--white);
+    margin-left: 300px;
+    margin-top: 40px;
+   
+}
+ .inovacao-title span{
+    display: block;
+    text-align: left;
+    margin-left: -7%;
+
+ }
+
+ .diferencial {
+    background-color: var(--black);
+    padding: 120px 40px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    overflow: hidden;
+}
+
+.diferencial-titulo {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(90px, 8vw, 200px);
+    line-height: 0.7;
+    background: linear-gradient(13deg, var(--primary), var(--white) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 30px;
+    transform: translateX(100px); 
+}
+
+.diferencial-card {
+    background-color: var(--card);
+    backdrop-filter: blur(100px);
+    border-radius: 24px;
+    padding: 24px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.diferencial-card h3 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.diferencial-card p {
+    font-family: 'Work Sans', sans-serif;
+    color: var(--light);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.diferencial-frase {
+    font-family: 'Work Sans', sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    color: var(--cinza);
+    margin-top: 20px;
+}
+
+.diferencial-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.celular-img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 60px rgba(240, 165, 0, 0.25));
+    transition: transform 0.5s ease, filter 0.5s ease;
+    transform: rotate(-12deg);
+}
+
+.celular-img:hover {
+    transform: rotateX(3deg) scale(1.05);
+    filter: drop-shadow(0 30px 80px rgba(240, 165, 0, 0.45));
 }
