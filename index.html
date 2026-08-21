@@ -1,185 +1,293 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="./assets/CSS/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lumora</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css">
 </head>
 <body>
 
-<!-- Cabeçalho ------------------------------------ -->
     <header id="cabecalho">
         <nav class="menu">
             <ul>
-                <li><a href="#Solução">Solução</a></li>
-                <li><a href="#Publico">Nosso Público</a></li>
-                <li><a href="#Galeria">Ideias</a></li>
+                <li><a href="#topo">Home</a></li>
+                <li><a href="#Publico">Nosso Publico</a></li>
+                <li><a href="#Solucao">Solução</a></li>
+                <li><a href="#Ideias">Ideias</a></li>
+                <li><a href="#Galeria">Galeria</a></li>
                 <li><a href="#Equipe">Equipe Lumora</a></li>
+                <li><a href="#Contato">Contatos</a></li>
             </ul>
         </nav>
     </header>
 
-<!-- Hero ------------------------------------ -->
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-title-wrapper">
-                <h1 class="hero-title" data-text="LUMORA">LUMORA</h1>
-                <img src="assets/imgs/lampada.svg" alt="lampada" class="lampada-icon" />
+    <main>
+
+        <section class="hero" id="topo">
+            <div class="hero-content">
+                <div class="hero-title-wrapper">
+                    <h1 class="hero-title" data-text="LUMORA">LUMORA</h1>
+                    <img src="assets/imgs/lampada.svg" alt="Lâmpada Lumora" class="lampada-icon" />
+                </div>
+                <p class="hero-subtitle">A inovação é agora</p>
             </div>
-            <p class="hero-subtitle">A inovação é agora</p>
+        </section>
+
+        <div class="questao">
+            <h2 class="questao-title">
+                Nós<br>
+                <span>Perguntamos:</span>
+            </h2>
         </div>
-    </section>
 
-    <section class="questao">
-        <h2 class="questao-title">
-            Nós<br>
-            <span>Perguntamos:</span>
-        </h2>
-    </section>
-
-    <section class="sonhos">
-    <div class="sonhos-header">
-        <h2 class="sonhos-titulo">O que os estudantes<br>desejam?</h2>
-        <p class="sonhos-pergunta">
-            Perguntamos: <span>"Se você sonhasse com um smartphone perfeito, como ele seria?"</span>
-        </p>
-    </div>
-
-    <div class="sonhos-grid">
-        <div class="sonho-card">
-            <div class="sonho-topo">
-                <img src="assets/imgs/user.svg" alt="" class="sonho-icone" />
-                <span class="sonho-numero">01</span>
+        <section class="publico" id="Publico">
+            <div class="publico-header">
+                <h2 class="publico-titulo">O que os estudantes<br>desejam?</h2>
+                <p class="publico-publico">
+                    Nosso público-alvo são estudantes do ensino médio e superior que usam a câmera do celular
+                    como ferramenta de estudo, para fotografar lousas, anotações e materiais de aula. Para eles, a
+                    solução é relevante porque transforma fotos soltas em conteúdo organizado, evitando que registros importantes se percam entre fotos comuns na galeria.
+                </p>
+                <p class="publico-pergunta">
+                    Perguntamos: <span>"Se você sonhasse com um smartphone perfeito, como ele seria?"</span>
+                </p>
             </div>
-            <p>Câmeras que transcrevessem para um bloco de notas (ou outro aplicativo de anotações) o conteúdo fotografado, como imagens, textos, planilhas, etc.</p>
-        </div>
 
-        <div class="sonho-card">
-            <div class="sonho-topo">
-                <img src="assets/imgs/user.svg" alt="" class="sonho-icone" />
-                <span class="sonho-numero">02</span>
+            <div class="publico-grid">
+                <div class="publico-card">
+                    <div class="publico-topo">
+                        <img src="assets/imgs/user.svg" alt="Ícone usuário" class="publico-icone" />
+                        <span class="publico-numero">01</span>
+                    </div>
+                    <p>Câmeras que transcrevessem para um bloco de notas o conteúdo fotografado, como imagens, textos e planilhas.</p>
+                </div>
+
+                <div class="publico-card">
+                    <div class="publico-topo">
+                        <img src="assets/imgs/user.svg" alt="Ícone usuário" class="publico-icone" />
+                        <span class="publico-numero">02</span>
+                    </div>
+                    <p>Smartphone com tela grande e app que reuna vídeos e PDFs, com IA para resumir e explicar de forma focada.</p>
+                </div>
+
+                <div class="publico-card">
+                    <div class="publico-topo">
+                        <img src="assets/imgs/user.svg" alt="Ícone usuário" class="publico-icone" />
+                        <span class="publico-numero">03</span>
+                    </div>
+                    <p>Digitalização e leitura automática de textos a partir de fotos tiradas com a câmera.</p>
+                </div>
+
+                <div class="publico-card">
+                    <div class="publico-topo">
+                        <img src="assets/imgs/user.svg" alt="Ícone usuário" class="publico-icone" />
+                        <span class="publico-numero">04</span>
+                    </div>
+                    <p>Armazenamento em pastas e criação de conteúdo de aprendizado a partir das fotos tiradas.</p>
+                </div>
             </div>
-            <p>Smartphone com tela grande e um app que reunisse vídeos e livros de diferentes matérias (PDFs), com IA para resumir e explicar o conteúdo de forma focada no usuário.</p>
-        </div>
+        </section>
 
-        <div class="sonho-card">
-            <div class="sonho-topo">
-                <img src="assets/imgs/user.svg" alt="" class="sonho-icone" />
-                <span class="sonho-numero">03</span>
+        <div class="resposta">
+            <h2 class="resposta-title">
+                E nós<br>
+                <span>ouvimos...</span>
+            </h2>
+        </div>
+         
+        <section class="solucao" id="Solucao">
+            <div class="solucao-titulo-wrapper">
+                <h2 class="solucao-titulo">
+                    Solução<br>do<br>Time
+                </h2>
             </div>
-            <p>Digitalização e leitura automática de textos a partir de fotos tiradas com a câmera.</p>
+
+            <div class="solucao-lista">
+                <div class="solucao-card">
+                    <h3>Galeria com separação automática por tema</h3>
+                    <p>App à parte que organiza fotos por contexto (armazena fotos referentes aos estudos).</p>
+                    <span class="solucao-tag">Alto impacto · Esforço médio</span>
+                </div>
+
+                <div class="solucao-card solucao-card--destaque">
+                    <h3>Modo Estudo com IA</h3>
+                    <p>Reconhece fotos de lousas e cadernos, transcreve textos, cria flashcards e resumos.</p>
+                    <span class="solucao-tag">Alto impacto · Esforço médio</span>
+                </div>
+
+                <div class="solucao-card">
+                    <h3>Escaneamento Inteligente</h3>
+                    <p>IA detecta o contexto em tempo real e sugere o modo de câmera ideal na tela.</p>
+                    <span class="solucao-tag">Alto impacto · Esforço médio</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="inovacao">
+            <h2 class="inovacao-title">
+                FUGIMOS DO<br>
+                <span>PADRÃO</span>
+            </h2>
         </div>
 
-        <div class="sonho-card">
-           <div class="sonho-topo">
-                <img src="assets/imgs/user.svg" alt="" class="sonho-icone" />
-                <span class="sonho-numero">04</span>
-           </div>
-            <p>Armazenamento em pastas e criação de conteúdo de aprendizado a partir das fotos tiradas.</p>
+        <section class="ideia" id="Ideias">
+            <div class="ideia-conteudo">
+                <h2 class="ideia-titulo">
+                    Nosso<br>Diferencial
+                </h2>
+
+                <div class="ideia-card">
+                    <h3>Estudantes</h3>
+                    <p>Organização e agilidade para armazenar conteúdos de aula. Abraçamos o estudante full-time.</p>
+                </div>
+
+                <div class="ideia-card">
+                    <h3>Coletividade</h3>
+                    <p>Para quem tem dificuldade de explorar modos de câmera. Nossa vantagem alcança todos.</p>
+                </div>
+
+                <p class="ideia-frase">Uma câmera inteligente. Para cada momento. Para cada pessoa.</p>
+            </div>
+
+            <div class="ideia-imagem">
+                <img src="assets/imgs/celular.png" alt="Smartphone JOVI V70" class="celular-img" />
+            </div>
+        </section>
+
+        <div class="futuro">
+            <h2 class="futuro-title">
+                PORQUE O FUTURO<br>
+                <span>NÃO ESPERA!</span>
+            </h2>
         </div>
+
+         <section class="galeria" id="Galeria">
+            <h2 class="galeria-titulo">Como funcionaria:</h2>
+
+            <div class="galeria-fluxo">
+                <div class="galeria-etapa">
+                    <img src="assets/imgs/celular1.png" alt="Tela do app detectando a lousa" class="galeria-print" />
+                    <p>Ao apontar para uma lousa, a IA reconhece o conteúdo e sugere o envio para o EstudAI.</p>
+                </div>
+
+                <div class="galeria-seta">
+                    <img src="assets/imgs/seta.svg" alt="Seta indicando próxima etapa" class="seta-icone" />
+                </div>
+
+                <div class="galeria-etapa">
+                    <img src="assets/imgs/celular2.png" alt="Aviso da galeria alternativa" class="galeria-print" />
+                    <p>Ao clicar, um aviso confirma que as fotos tiradas irão para a galeria do EstudAI.</p>
+                </div>
+            </div>
+
+            <div class="galeria-seta-baixo">
+                <img src="assets/imgs/seta-baixo.svg" alt="Seta para baixo" class="seta-baixo-icone" />
+            </div>
+
+            <div class="galeria-video-wrap">
+                <video class="galeria-video" controls width="320">
+                    <source src="assets/imgs/estudai.mp4" type="video/mp4">
+                    Seu navegador não suporta a exibição deste vídeo.
+                </video>
+            </div>
+        </section>
+
+        <section class="equipe" id="Equipe">
+            <div class="equipe-header">
+                <span class="equipe-subtitulo">Conheça-nos</span>
+                <h2 class="equipe-titulo">O TIME DA <span>LUMORA</span></h2>
+            </div>
+
+            <div class="equipe-grid">
+                <div class="membro-card">
+                    <div class="membro-info">
+                        <h3>Giovanna Nunes</h3>
+                        <p>Gestão</p>
+                    </div>
+                    <div class="membro-foto-wrap">
+                        <img src="assets/imgs/giovanna.jpeg" alt="Giovanna" class="membro-foto" />
+                    </div>
+                </div>
+
+                <div class="membro-card">
+                    <div class="membro-info">
+                        <h3>Laura Siqueira</h3>
+                        <p>Organização</p>
+                    </div>
+                    <div class="membro-foto-wrap">
+                        <img src="assets/imgs/Laura.png" alt="Laura Siqueira" class="membro-foto" />
+                    </div>
+                </div>
+
+                <div class="membro-card">
+                    <div class="membro-info">
+                        <h3>Raphael Mascarenhas</h3>
+                        <p>Comunicação</p>
+                    </div>
+                    <div class="membro-foto-wrap">
+                        <img src="assets/imgs/Raphael.png" alt="Raphael" class="membro-foto" />
+                    </div>
+                </div>
+
+                <div class="membro-card membro-card-linha2">
+                    <div class="membro-info">
+                        <h3>Roandry Fernandez</h3>
+                        <p>Divulgação</p>
+                    </div>
+                    <div class="membro-foto-wrap">
+                        <img src="assets/imgs/Roandry.png" alt="Roandry" class="membro-foto" />
+                    </div>
+                </div>
+
+                <div class="membro-card">
+                    <div class="membro-info">
+                        <h3>Vinícius Ferreira</h3>
+                        <p>Estrutura</p>
+                    </div>
+                    <div class="membro-foto-wrap">
+                        <img src="assets/imgs/Vinicius.jpeg" alt="Vinícius" class="membro-foto" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contato" id="Contato">
+            <h2 class="contato-titulo">Fale com a gente</h2>
+            <p class="contato-subtitulo">Tem alguma dúvida ou sugestão? Entre em contato.</p>
+
+            <a href="mailto:contato@lumora.com" class="contato-email">centrallumora@gmail.com</a>
+
+            <div class="contato-redes">
+               <a href="#topo" aria-label="Instagram" class="contato-icone">
+                    <img src="assets/imgs/insta.svg" alt="insta" />
+               </a>
+               <a href="#topo" aria-label="LinkedIn" class="contato-icone">
+                    <img src="assets/imgs/linkedin.svg" alt="linke" />
+               </a>
+               
+            </div>
+        </section>
+
+    </main>
+
+   <footer>
+    <div class="footer-conteudo">
+        <p class="footer-logo">LUMORA</p>
+
+        <nav class="footer-links">
+            <a href="#Publico">Nosso Público</a>
+            <a href="#Ideias">Ideia</a>
+            <a href="#Solucao">Solução</a>
+            <a href="#Galeria">Galeria</a>
+            <a href="#Equipe">Equipe Lumora</a>
+            <a href="#Contato">Contatos</a>
+            
+        </nav>
     </div>
-    </section>
 
-    <section class="resposta">
-        <h2 class="resposta-title">
-            E nós<br>
-            <span>ouvimos...</span>
-        </h2>
-    </section>
-
-    <section class="ideias">
-    <div class="ideias-titulo-wrapper">
-        <h2 class="ideias-titulo">
-            Ideias<br>
-            do<br>
-            Time
-        </h2>
-    </div>
-
-    <div class="ideias-lista">
-        <div class="ideia-card">
-            <h3>Galeria com separação automática por tema</h3>
-            <p>App à parte que organiza fotos por contexto (armazena fotos referentes aos estudos)</p>
-            <span class="ideia-tag">Alto impacto · Esforço médio</span>
-        </div>
-
-        <div class="ideia-card ideia-card--destaque">
-            <h3>Modo Estudo com IA</h3>
-            <p>Reconhece fotos de lousas e cadernos, transcreve textos, cria flashcards e resumos. Complementa a galeria.</p>
-            <span class="ideia-tag">Alto impacto · Esforço médio</span>
-        </div>
-
-        <div class="ideia-card">
-            <h3>Escaneamento Inteligente</h3>
-            <p>IA detecta o contexto em tempo real e sugere o modo de câmera ideal na tela</p>
-            <span class="ideia-tag">Alto impacto · Esforço médio</span>
-        </div>
-    </div>
-    </section>
-    
-    <section class="inovacao">
-        <h2 class="inovacao-title">
-            FUGIMOS DO<br>
-            <span>PADRÃO</span>
-        </h2>
-    </section>
-
-    <section class="diferencial">
-    <div class="diferencial-conteudo">
-        <h2 class="diferencial-titulo">
-            Nosso<br>
-            Diferencial
-        </h2>
-
-        <div class="diferencial-card">
-            <h3>Estudantes</h3>
-            <p>Organização e agilidade para armazenar conteúdos de aula. Abraçamos o estudante full-time, nos momentos de estudo e de lazer.</p>
-        </div>
-
-        <div class="diferencial-card">
-            <h3>Coletividade</h3>
-            <p>Para quem tem preguiça ou dificuldade de explorar os modos de câmera. Nossa vantagem alcança toda a população brasileira.</p>
-        </div>
-
-        <p class="diferencial-frase">Uma câmera inteligente. Para cada momento. Para cada pessoa.</p>
-    </div>
-
-    <div class="diferencial-imagem">
-        <img src="assets/imgs/celular.png" alt="Celular com câmera em destaque" class="celular-img" />
-    </div>
-    </section>
-<!-- Conteúdo ------------------------------------ -->
-    <section>
-        <article>
-            <h2></h2>
-        </article>
-    </section>
-
-    <section>
-        <article>
-            <h2>Ideias do Time</h2>
-        </article>
-    </section>
-
-    <section>
-        <article>
-            <h2>Nosso diferencial</h2>
-        </article>
-    </section>
-
-    <section>
-        <article></article>
-    </section>
-
-    <section>
-        <article>
-            <h2>O time da Lumora</h2>
-        </article>
-    </section>
-
-<!-- Rodapé ------------------------------------- -->
-    <footer></footer>
+    <p class="footer-copy">&copy; 2026 Lumora - Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 </html>
