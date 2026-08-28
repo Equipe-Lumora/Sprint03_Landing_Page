@@ -71,7 +71,7 @@ header {
     transform: scale(1.1);
 }
 
-.menu ul {
+.menu-lista {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -79,13 +79,14 @@ header {
     list-style: none;
 }
 
-.menu ul li {
+.menu-lista li {
     margin: 0 15px;
     padding: 7px 5px;
     display: inline;
 }
 
 .menu a {
+    font-family: 'Work Sans', sans-serif;
     color: var(--primary);
     text-decoration: none;
     text-transform: uppercase;
@@ -94,10 +95,46 @@ header {
     font-weight: 700;
     margin: 0 15px;
     white-space: nowrap;
+}
 
-    &:hover {
-        color: var(--light);
-    }
+.menu a:hover {
+    color: var(--light);
+}
+
+/* menu hamburguer (checkbox hack, sem JS) */
+.menu-toggle {
+    display: none;
+}
+
+.menu-hamburguer {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.menu-hamburguer span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--primary);
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-toggle:checked ~ .menu-hamburguer span:nth-child(1) {
+    transform: translateY(8.5px) rotate(45deg);
+}
+
+.menu-toggle:checked ~ .menu-hamburguer span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle:checked ~ .menu-hamburguer span:nth-child(3) {
+    transform: translateY(-8.5px) rotate(-45deg);
 }
 
 
@@ -371,6 +408,8 @@ header {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .solucao-titulo-wrapper {
@@ -465,6 +504,8 @@ header {
     align-items: center;
     gap: 40px;
     overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .ideia-titulo {
@@ -661,7 +702,7 @@ header {
 .membro-card {
     grid-column: span 2;
     background-color: var(--light);
-    border-radius: 50px 100px 100px 50px;
+    border-radius: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -865,9 +906,17 @@ footer {
     }
 
     .solucao,
+    .ideia,
+    .publico,
+    .galeria,
+    .equipe,
+    .contato {
+        padding: 60px 20px;
+    }
+
+    .solucao,
     .ideia {
         grid-template-columns: 1fr;
-        padding: 80px 20px;
         gap: 30px;
     }
 
@@ -892,48 +941,42 @@ footer {
     .galeria-print {
         max-height: 340px;
     }
- 
-    .solucao, 
-    .ideia, 
-    .publico, 
-    .galeria, 
-    .equipe, 
-    .contato {
-        padding: 60px 20px;
-    }
-
-    .solucao, 
-    .ideia {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .ideia-imagem {
-        order: -1;
-    }
-
-    .equipe-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .membro-card-linha2 {
-        grid-column: span 1;
-    }
 }
+
 /* cel */
 @media (max-width: 750px) {
-   
+
     .menu {
         flex-direction: column;
         padding: 12px;
     }
 
-    .menu ul li {
+    .menu-lista li {
         margin: 0 4px;
     }
 
     .menu a {
         font-size: 12px;
+    }
+
+    .menu-hamburguer {
+        display: flex;
+        align-self: flex-end;
+    }
+
+    .menu-lista {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+    }
+
+    .menu-toggle:checked ~ .menu-lista {
+        max-height: 500px;
+        padding: 20px 0;
     }
 
     .publico-grid,
